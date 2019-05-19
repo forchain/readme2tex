@@ -10,7 +10,7 @@ Renders LaTeX for Github Readmes
 ----------------------------------------
 
 `readme2tex` is a Python script that "texifies" your readme. It takes in Github Markdown and
-replaces anything enclosed between dollar signs with rendered <img alt="$\text{\LaTeX}$" src="svgs/c068b57af6b6fa949824f73dcb828783.png?invert_in_darkmode" align=middle width="42.05817pt" height="22.407pt"/>.
+replaces anything enclosed between dollar signs with rendered <img alt="$\text{\LaTeX}$" src="svgs/c068b57af6b6fa949824f73dcb828783.svg?sanitize=true" align=middle width="42.05817pt" height="22.407pt"/>.
 
 In addition, while other Github TeX renderers tend to give a jumpy look to the compiled text, 
 <p align="center">
@@ -91,7 +91,7 @@ The code that was used to render this formula is just
 
 Here's an inline formula. 
 
-> It is well known that if <img alt="$ax^2 + bx + c =0$" src="svgs/162f63774d8a882cc15ae1301cfd8ac0.png?invert_in_darkmode" align=middle width="119.01186pt" height="26.70657pt"/>, then <img alt="$x = \frac{-b \pm \sqrt{b^2- 4ac}}{2a}$" src="svgs/584fa2612b78129d140fb208e9d76ae9.png?invert_in_darkmode" align=middle width="112.3584pt" height="33.20526pt"/>.
+> It is well known that if <img alt="$ax^2 + bx + c =0$" src="svgs/162f63774d8a882cc15ae1301cfd8ac0.svg?sanitize=true" align=middle width="119.01186pt" height="26.70657pt"/>, then <img alt="$x = \frac{-b \pm \sqrt{b^2- 4ac}}{2a}$" src="svgs/584fa2612b78129d140fb208e9d76ae9.svg?sanitize=true" align=middle width="112.3584pt" height="33.20526pt"/>.
 
 The code that was used to render this is:
 
@@ -99,7 +99,7 @@ The code that was used to render this is:
 
 Notice that the formulas line up with the baseline of the text, even when the height of these two images are different.
 
-Sometimes, you might run into formulas that are bottom-heavy, like <img alt="$x^2\sum\limits_{3^{n^{n^{n}}}}$" src="svgs/4cb4ead947a07837121937c807973436.png?invert_in_darkmode" align=middle width="47.639295pt" height="37.03194pt"/>. Here, `readme2tex`
+Sometimes, you might run into formulas that are bottom-heavy, like <img alt="$x^2\sum\limits_{3^{n^{n^{n}}}}$" src="svgs/4cb4ead947a07837121937c807973436.svg?sanitize=true" align=middle width="47.639295pt" height="37.03194pt"/>. Here, `readme2tex`
 can compute the correct offset to align this formula to the baseline of your paragraph of text as well.
 
 #### Tikz (Courtesy of http://www.texample.net/)
@@ -263,7 +263,7 @@ is the exact middle of the image. For IE and Edge however, the center is about 5
 above the exact center. Since this looks great for non-IE browsers, and reasonably good on Edge, this is the default
 rendering method. The trick here is to pad either the top or the bottom of the image with extra spaces until the
 baseline of the formula is at the center. For most formulas, this works great. However, if you have a tall formula,
-like <img alt="$\frac{~}{\sum\limits_{x^{x^{x^{x}}}}^{x^{x^{x^{x}}}} f(x)}$" src="svgs/bdd0f9b91b7fff7fe5a2b1b7684a96ef.png?invert_in_darkmode" align=middle width="56.16666pt" height="71.68953pt"/>, you'll notice that there might be a lot
+like <img alt="$\frac{~}{\sum\limits_{x^{x^{x^{x}}}}^{x^{x^{x^{x}}}} f(x)}$" src="svgs/bdd0f9b91b7fff7fe5a2b1b7684a96ef.svg?sanitize=true" align=middle width="56.16666pt" height="71.68953pt"/>, you'll notice that there might be a lot
 of slack vertical spacing between these lines. If this is a deal-breaker for you, you can always try the `--valign True`
 mode. For most inline formulas, this is usually a non-issue.
 
